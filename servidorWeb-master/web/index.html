@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <meta charset='utf-8'/>
+        <title>Agencias Cano</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+        <link rel='stylesheet' href='https://code.getmdl.io/1.3.0/material.indigo-pink.min.css'>
+        <link rel='stylesheet' href='estils.css'>
+        <script src='https://code.getmdl.io/1.3.0/material.min.js' defer></script>
+        <script src='script-login.js'></script>
+        <script src='script-navegacio.js'></script>
+        <script src='script-popups.js'></script>
+        <script src='script-seccio-backofficeusuaris.js'></script>
+        <script src='script-seccio-frontendproductes.js'></script>
+        <script src='script-utils.js'></script>
+        <script src='script.js'></script>
+
+        <!-- Icones d'aplicació per a navegadors d'escriptori, webapps iOS i webapps Android -->
+        <!-- Icones generats amb: https://www.favicon-generator.org/ -->
+        <link href="img/Logo.jpg" rel="icon" type="image/png" sizes="192x192">
+        <link href="appicons/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="appicons/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <link href="appicons/manifest.json" rel="manifest">
+    </head>
+    <body onload='inicia()'>
+        <div id="logo">
+            <div class="img1">
+                <img src="img/Logo.jpg" width="90" height="90">
+            </div>
+        </div>
+        <div id='frontendMenuWeb' class='flexRow desktop'>
+            <div class='botoMenu' onclick='navegacio.canviaSeccio("frontendHome")'>INICI</div>
+            <div class='botoMenu' onclick='navegacio.canviaSeccio("frontendPresentacio")'>PRESENTACIÓ</div>
+            <div class='botoMenu' onclick='navegacio.canviaSeccio("frontendProductes")'>PRODUCTES</div>
+            <div class='botoMenu' onclick='navegacio.canviaSeccio("frontendContacte")'>CONTACTE</div>
+            <div id='botoLoginWeb' class='botoMenu' onclick='popups.mostraPopup("popupLogin")'>LOGIN BACKOFFICE</div>
+            <div id='botoGestioUsuarisWeb' class='botoMenu none' onclick='navegacio.canviaSeccio("backofficeUsuaris")'>Gestió usuaris</div>
+            <div id='botoGestioProductesWeb' class='botoMenu none' onclick='navegacio.canviaSeccio("backofficeProductes")'>Gestió productes</div>
+            <div id='botoLogoutWeb' class='botoMenu none' onclick='login.tancaLaSessio()'>Sortir</div>
+        </div>
+        <div id='frontendMenuMobil' class='flexColumn mobile'> 
+            <div class='botoMenu' onclick='navegacio.canviaSeccio("frontendHome")'>INICI</div>
+            <div class='botoMenu' onclick='navegacio.canviaSeccio("frontendPresentacio")'>PRESENTACIÓ</div>
+            <div class='botoMenu' onclick='navegacio.canviaSeccio("frontendProductes")'>PRODUCTES</div>
+            <div class='botoMenu' onclick='navegacio.canviaSeccio("frontendContacte")'>CONTACTE</div>
+            <div id='botoLoginMobil' class='botoMenu' onclick='popups.mostraPopup("popupLogin")'>LOGIN BACKOFFICE</div>
+            <div id='botoGestioUsuarisMobil' class='botoMenu none' onclick='navegacio.canviaSeccio("backofficeUsuaris")'>Gestió usuaris</div>
+            <div id='botoGestioProductesMobil' class='botoMenu none' onclick='navegacio.canviaSeccio("backofficeProductes")'>Gestió productes</div>
+            <div id='botoLogoutMobil' class='botoMenu none' onclick='login.tancaLaSessio()'>Sortir</div>
+        </div>
+        <div id='frontendHome'>
+            <img src="img/SLIDER.jpg" width="100%" height="350px">
+            <div class="Categorias">
+                <section class="uno">
+                    <img src="img/Montaña.jpg" width="250" height="150">
+                    <h2>Montañoso</h2>
+                    <p>Todos los paises con los mejores paisajes montañosos. Dar clic en leer mas para continuar</p>
+                    <a href="" class="Leer-mas">Leer mas</a><br>
+                    <br>
+                </section>
+                <section class="uno dos">
+                    <img src="img/Ciudad1.jpg" width="250" height="150">
+                    <h2>Ciudad</h2>
+                    <p>Todos los paises con las mejores zonas turisticas. Dar clic en leer mas para continuar</p>
+                    <a href="" class="Leer-mas">Leer mas</a><br><br>
+                </section>
+                <section class="uno">
+                    <img src="img/Playa.jpg" width="250" height="150">
+                    <h2>Playa</h2>
+                    <p>Todos los paises con las mejores playas de todo el mundo. Dar clic en leer mas para continuar</p>
+                    <a href="" class="Leer-mas">Leer mas</a><br><br>
+                </section>
+            </div>
+        </div>
+        <div id='frontendPresentacio'>
+            <img src="img/SLIDER.jpg" width="100%" height="350px">
+            <section id="izq">
+                <p>
+                    <img src="img/Logo.jpg" align="left" width="120" margin-left="10">
+                    <h2>Historia de Cano Corporación Empresarial S.A</h2>
+                    Es un holding empresarial español propiedad de Marc Cano que opera compañías aéreas como Air Europa y dirige hoteles como MC Hoteles y Melody Maker junto a agencias de viajes como Agencias Cano.
+                    <br>
+                    <br>
+                    Se registra el 14 de mayo de 1997 con el nombre de Cano Corporación Empresarial S.A. Previamente a ello, Agencias Cano, la primera firma de la corporación, abre su primera oficina en 1971. Tiempo después, en 1988 se constituye el primer tour operador de la firma: TravelCano.<br><br> En 1991, Marc Cano adquiere la participación mayoritaria de Air Europa, comenzando a operar vuelos interprovinciales en competencia con el entonces monopolio de Iberia. En 1998 cambia su denominación social por el actual, Cano Corporación Empresarial S.A.
+                </p>
+            </section>
+        </div>
+        <div id='frontendProductes'>
+            <div id='productesLoading'>Carregant productes ...</div>
+            <div id='productesContinguts' class='flexColumn'></div>
+        </div>
+        <div id='frontendContacte'>
+
+        </div>
+        <div id='backofficeUsuaris'>
+            <div id='backofficeUsuarisLoading'>Carregant usuaris ...</div>
+            <div id='backofficeUsuarisContinguts' class='flexColumn'></div>
+        </div>
+        <div id='backofficeProductes'>
+            Pàgina per fer la gestió dels productes
+        </div>
+        <div id='popups' onclick='popups.amagaAmbClick(event)'>
+            <div id='popupLogin' class='flexColumn'>
+                <div>Email:</div>
+                <input id='loginCorreu' type='text' class='halfWidth' />
+                <div>Codi:</div>
+                <input id='loginCodi' type='password' class='halfWidth' />
+                <br/>
+                <input type='button' value='entra' class='halfWidth' onclick='login.autenticaAmbFormulari()' />
+                <div id='loginLoading' class='none'>Carregant ...</div>
+                <div id='loginError' class='none'>Error al fer login ...</div>
+            </div>
+            <div id='popupBackofficeUsuaris' class='flexColumn'>
+                <div>Id:</div>
+                <div id='backofficeUsuarisId'></div>
+                <div>Correu:</div>
+                <input id='backofficeUsuarisCorreu' type='text' value=''/>
+                <div>Nom:</div>
+                <input id='backofficeUsuarisNom' type='text' value=''/>
+                <div>Tipus:</div>
+                <select id='backofficeUsuarisTipus'>
+                    <option>admin</option>
+                    <option>normal</option>
+                </select>
+                <div>Codi:</div>
+                <input id='backofficeUsuarisCodi' type='text' value=''/>
+                <div>Imatge:</div>
+                <div class='flex flexRow'>
+                    <img id='backofficeUsuarisImg' src='/web/imatges/transparent.png' width='100'/>
+                    <input id='backofficeUsuarisArxiu' class="dropFile" accept="image/*" type="file" onchange="seccioBackofficeUsuaris.mostraImatge()" />
+                </div>
+                
+                <br/>
+                <input type='button' value='Guarda' onclick='seccioBackofficeUsuaris.guardaDadesUsuariAlServidor()'/>
+                <br/>
+                <input id='backofficeUsuarisBotoEsborra' type='button' value='Esborra l&#39;usuari' onclick='seccioBackofficeUsuaris.esborraUsuariDelServidor()' />
+                <div id='backofficeUsuarisPopupLoading' class='none'>Carregant ...</div>
+                <div id='backofficeUsuarisPopupError' class='none'>Error al guardar les dades ...</div>
+            </div>
+        </div>
+    </body>
+</html>

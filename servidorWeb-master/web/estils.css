@@ -1,0 +1,165 @@
+/* Definicions de classes utils genèriques */
+.desktop { display: flex !important; }
+.mobile  { display: flex !important; }
+@media only screen and (max-device-width: 599px) { .desktop { display: none !important; } }
+@media only screen and (min-device-width: 600px) { .mobile  { display: none !important; } }
+.flexRow    { flex-direction: row; }
+.flexColumn { flex-direction: column; }
+.none       { display: none; }
+.halfWidth  { max-width: 50%; }
+.botoIcona  { cursor: pointer; }
+
+/* Definicions específiques */
+table, th, td {
+    border-collapse: collapse;
+}
+
+#frontendMenuWeb{
+    background: #F1A96B;
+    height: 90px;
+    border: 1px solid black;
+}
+
+#frontendMenuMobil{
+    background: #F1A96B;
+    height: auto;
+    border: 1px solid black;
+
+}
+
+.botoMenu {
+    color: black;
+    margin-top: 10px;
+    cursor: pointer;
+    margin: 16px;
+    margin-top: 5px;
+    text-decoration: none;
+    height: 25px;
+    font-style: initial;
+    font-size: 17px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.botoMenu:hover {
+    text-decoration: none;
+    background: white; 
+    color: #F1A96B;
+    border: 1px solid black;
+    transition: background 0.5s, border 0.5s;
+    height: 25px;
+}
+
+#logo{
+    width: 90px;
+    height: 90px;
+    border: 1px solid rgb(0, 0, 0);
+    float: left;
+    background-color: #F1A96B;
+}
+
+body {
+    font-family: "Open Sans";
+}
+
+body > #frontendHome {
+
+
+}
+
+body > #frontendPresentacio {
+
+}
+
+body > #frontendProductes {
+
+}
+
+body > #frontendProductes > #productesContinguts {
+    width: 100%;
+}
+
+body > #frontendContacte {
+
+}
+
+body > #backofficeUsuaris {
+
+}
+
+body > #backofficeProductes {
+
+}
+
+body > #popups {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#popups > div {
+    border: solid 1px black;
+    background-color: lightcyan;
+}
+
+
+#izq{
+    width: auto;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.categorias{
+    width: 900px;
+    height: auto;
+    overflow: hidden;
+    border: 0px solid;
+    margin-top: 10px;
+}
+.uno{
+    width: 280px;
+    height: auto; overflow: hidden;
+    border: 1px solid #000;
+    float: left;
+    padding: 5px;
+    text-align: center;
+    background-color: #F1A96B;
+}
+.dos{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.tres{
+    width: 200px;
+    height: auto; overflow: hidden;
+    border: 1px solid #000;
+    float: left;
+    padding: 5px;
+    text-align: center;
+    background-color: #F1A96B;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    flex-direction: row;
+    justify-content: center;
+}
+.Leer-mas{
+    text-decoration: none;
+    border: 1px solid #000;
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+    color: black;
+    background-color: #fff;
+}
+.Leer-mas:hover{
+    background: #FA694A;
+    color: #fff;
+    transition: background 1s, color 1s;
+}
