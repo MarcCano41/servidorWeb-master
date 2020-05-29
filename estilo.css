@@ -22,7 +22,7 @@ header{
 }
 .menu{
     width: auto; overflow: hidden;
-    height: 45px;
+    height: 50px;
     border: 1px solid #000;
     float: right;
     margin-top: 30px;
@@ -67,6 +67,7 @@ header{
     padding: 5px;
     text-align: center;
     background-color: #F1A96B;
+    margin: auto;
 }
 .dos{
     margin-left: 12px;
@@ -105,7 +106,16 @@ header{
     border: 0px sloid #c0c0c0;
 }
 #izq{
-    width: 585px;
+    width: 590px;
+    height: auto; overflow: hidden;
+    border: 1px solid #ccc;
+    float: left;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#izq1{
+    width: 887px;
     height: auto; overflow: hidden;
     border: 1px solid #ccc;
     float: left;
@@ -118,10 +128,10 @@ header{
     height: 340px;
     border: 0px solid #000;
     float: right;
-    margin-top: 10px;
     background-image: url(img/Contacto1.jpg);
     background-size: 270px;
     font-family: monospace;
+    margin-top: 10px;
 }
 form{
     width: 270px;
